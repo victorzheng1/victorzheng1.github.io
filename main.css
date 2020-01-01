@@ -1,14 +1,19 @@
 h1{
 	font-weight:1000;
 	font-size: 30px
-	border-
+	align-content: centre;
 
 }
 
-#intro{
+body{
 	background: rgba(220,220,220,0.75);
 }
 
+#intro{
+	align-content:center;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 12px;
+}
 #hk1 {
 	border-radius: 30%;
 	width: 500px;
