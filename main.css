@@ -1,3 +1,18 @@
-body{
+h1{
+	font-weight:1000;
+	font-size: 30px
+	border-
+
+}
+
+#intro{
 	background: rgba(220,220,220,0.75);
+}
+
+#hk1 {
+	border-radius: 30%;
+	width: 500px;
+	height: 500px;
+	display:flex;
+	align-content: center;
 }
