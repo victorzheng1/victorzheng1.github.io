@@ -1,8 +1,8 @@
 h1{
 	font-weight:1000;
-	font-size: 30px
-	align-content: centre;
-
+	font-size: 30px;
+	align-content: center;
+	justify-content: center;
 }
 
 body{
@@ -11,6 +11,7 @@ body{
 
 #intro{
 	align-content:center;
+	justify-content:center;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-size: 12px;
 }
@@ -19,5 +20,5 @@ body{
 	width: 500px;
 	height: 500px;
 	display:flex;
-	align-content: center;
+	justify-content: center;
 }
