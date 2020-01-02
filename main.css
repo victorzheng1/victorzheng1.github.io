@@ -15,10 +15,10 @@ body{
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-size: 12px;
 }
-#hk1 {
+img{
+	display: flex;
 	border-radius: 30%;
 	width: 500px;
 	height: 500px;
-	display:flex;
 	justify-content: center;
 }
