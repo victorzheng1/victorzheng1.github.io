@@ -9,13 +9,13 @@ body{
 	background: rgba(220,220,220,0.75);
 }
 
-nav {
+.topbar{
 	background-color: paleturquoise;
 	overflow:hidden;
 	overflow-wrap:normal;
 }
 
-nav a{
+.index{
 	float: left;
 	color:white;
 	text-align: center;
@@ -23,15 +23,16 @@ nav a{
 	font-size:14px;
 }
 
-nav a:hover{
+.index:hover{
 	background-color: aquamarine;
 	color: blanchedalmond;
 }
 
-nav a:active{
+.index:active{
 	background-color:blueviolet;
 	color:burlywood;
 }
+
 #intro{
 	display: flex;
 	flex-direction: column;
