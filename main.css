@@ -9,6 +9,29 @@ body{
 	background: rgba(220,220,220,0.75);
 }
 
+nav {
+	background-color: paleturquoise;
+	overflow:hidden;
+	overflow-wrap:normal;
+}
+
+nav a{
+	float: left;
+	color:white;
+	text-align: center;
+	padding: 10px 12px;
+	font-size:14px;
+}
+
+nav a:hover{
+	background-color: aquamarine;
+	color: blanchedalmond;
+}
+
+nav a:active{
+	background-color:blueviolet;
+	color:burlywood;
+}
 #intro{
 	display: flex;
 	flex-direction: column;
