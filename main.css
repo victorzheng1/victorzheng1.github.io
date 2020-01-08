@@ -2,7 +2,7 @@
 body{
 	background-color: ghostwhite;
 }
-
+/* nav bar styling*/
 .topbar{
 	background-color: skyblue;
 	overflow:hidden;
@@ -29,6 +29,7 @@ body{
 	color:cadetblue;
 }
 
+/* short intro*/
 #intro {
 	display: flex;
 	flex-direction: column;
@@ -37,7 +38,8 @@ body{
 	width: 500 px;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-size: 15px;
-	overflow-wrap: inherit;
+	overflow-wrap: break-word;
+	margin:0 15%;
 	overflow: auto;
 	padding: 0px 100px 20px 100px; //top right bottom left parameters
 	h1{
