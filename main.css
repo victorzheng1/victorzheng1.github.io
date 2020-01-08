@@ -1,30 +1,32 @@
 
 body{
-	background: rgba(220,220,220,0.75);
+	background-color: ghostwhite;
 }
 
 .topbar{
-	background-color: paleturquoise;
+	background-color: skyblue;
 	overflow:hidden;
 	overflow-wrap:normal;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 36px;
 }
 
 .index{
 	float: left;
-	color:white;
+	color: black;
 	text-align: center;
 	padding: 10px 12px;
 	font-size:14px;
 }
 
 .index:hover{
-	background-color: aquamarine;
+	background-color: cornflowerblue;
 	color: blanchedalmond;
 }
 
 .index:active{
-	background-color:blueviolet;
-	color:burlywood;
+	background-color:lightskyblue;
+	color:cadetblue;
 }
 
 #intro {
@@ -32,12 +34,17 @@ body{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	width: 500 px;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-size: 12px;
-	border: 3px solid black;
+	font-size: 15px;
+	border: 1px solid black;
 	box-sizing: border-box;
 	overflow-wrap: inherit;
 	overflow: auto;
+	padding: 0px 100px 20px 100px; //top right bottom left parameters
+	h1{
+		  font-size: 50px;
+	  }
 }
 img{
 	
