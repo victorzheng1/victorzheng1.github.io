@@ -7,11 +7,11 @@ body{
 	background-color: skyblue;
 	overflow:hidden;
 	overflow-wrap:normal;
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
 	font-size: 36px;
 }
 
-.index{
+.container{
 	float: left;
 	color: black;
 	text-align: center;
@@ -19,18 +19,23 @@ body{
 	font-size:14px;
 }
 
-.index:hover{
+.container:hover{
 	background-color: cornflowerblue;
 	color: blanchedalmond;
 }
 
-.index:active{
+.container:link{
+	transition: all .25s linear 0;
+	background-color: azure;
+}
+
+.container:active{
 	background-color:lightskyblue;
 	color:cadetblue;
 }
 
 /* short intro*/
-#intro {
+.jumbotron {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -42,9 +47,10 @@ body{
 	margin:0 15%;
 	overflow: auto;
 	padding: 0px 100px 20px 100px; //top right bottom left parameters
-	h1{
-		  font-size: 50px;
-	  }
+}
+
+h1 {
+	font-size: 50px;
 }
 img{
 	
@@ -54,6 +60,8 @@ img{
 
 }
 
-#resume{
+#resume {
 	border: 1px dashed pink;
+	margin: 0 15%;
+	padding: 300px 0px 300px 0;
 }
