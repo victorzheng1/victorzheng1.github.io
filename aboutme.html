@@ -4,25 +4,30 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css" />
-	<link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="main.css" />
     <title> Victor Zheng</title>
 </head>
 
-<nav>
-    <a class="active></a>
+<!--navigational bar at the top-->
+<nav class="topbar">
+    <a href="index.html" class="active"> Home </a> <!--brings back to home page-->
+    <a href="aboutme.html" class="active"> About Me</a> <!-- little biography page-->
+    <a href="portfolio.html" class="active"> Portfolio</a> <!--showcase of work here-->
+    <a href="contactlinks.html" class="active"> Contact Me</a> <!--put some social media-->
 </nav>
+
 <body>
     <h1> About Me!</h1>
-    <font face="verdana" size="4">
+    <div class="container"
         <p>
-            I was born in China and came to Canada at the age of one and an half. My family and I moved around in downtown
+            I was born in China and came to Canada at the age of one and an half. My family and I moved around in downtown until we settled down in the neighbourhood of Flemingdon Park. I am proud to have been raised in one of Canada's most culturally vibrant and inclusive communities. '
 
         </p>
     </font>
 
     <script>
         function fact_generate{
-            let facts = { "Big supporter of the Tottenham Hotspurs!", "Has never consumed alcohol or any perspective changing substances", "Never been more South than Virginia!"}
+            let facts = { "Big supporter of the Tottenham Hotspurs!": "Has never consumed alcohol or any perspective changing substances": "Never been more South than Virginia!"}
             const factFun = document.querySelector('factFun');
             const button = document.querySelector('funActivator');
             const display = document.querySelector('displayField');
