@@ -19,27 +19,29 @@
     <div class="container">
         <h1> About Me!</h1>
         <p>
-            I was born in China and came to Canada at the age of one and an half. My family and I moved around in downtown until we settled down in the neighbourhood of Flemingdon Park. I am proud to have been raised in one of Canada's most culturally vibrant and inclusive communities. Through my childhood, I learned the values of hardwork, humility,
+            I was born in China and came to Canada at the age of one and an half. My family and I moved around in downtown until we settled down in the neighbourhood of Flemingdon Park.
+            I am proud to have been raised in one of Canada's most culturally vibrant and inclusive communities. Through my childhood, I learned the values of hardwork, humility, and diligence.
+            My first exposure to computers was during fifth grade when I created a website through Blogger for the flash game Club Penguin. 
+            I learned the basics of HTML elements and attributes and
 
         </p>
     </div>
 
     <div class="factFun">
-        <button class="funActivator">
-            Click here for a fun fact about me!
-        </button>
         <p class="displayField">
         </p>
     </div>
 
     <script>
         function fact_generate() {
-            let facts = { "Big supporter of the Tottenham Hotspurs!", "Has never consumed alcohol or any perspective changing substances", "Never been more South than Virginia!"};
-            const display = document.querySelector('displayField');
+            let facts = {"Big supporter of the Tottenham Hotspurs!", "Has never consumed alcohol or any perspective changing substances", "Never been more South than Virginia!"};
+            const display = document.querySelector('.displayField');
             display.textContent = facts[Math.random(2)];
         }
-            const factFun = document.querySelector('factFun');
-        const button = document.querySelector('funActivator');
+        const factFun = document.querySelector('.factFun');
+        const button = document.createElement('button');
+        button.textContent = 'Click here for more fun facts!';
+        document.body.appendChild(button);
         button.addEventListener('click', fact_generate);
     </script>
 

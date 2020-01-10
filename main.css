@@ -2,7 +2,7 @@
 body{
 	background-color: ghostwhite;
 }
-/* nav bar styling*/
+/* nav bar styling*/                                                                                                                                       
 .topbar{
 	background-color: skyblue;
 	overflow:hidden;
@@ -51,17 +51,4 @@ body{
 
 h1 {
 	font-size: 50px;
-}
-img{
-	
-	border-radius: 30%;
-	width: 200px;
-	height: 200px;
-
-}
-
-#resume {
-	border: 1px dashed pink;
-	margin: 0 15%;
-	padding: 300px 0px 300px 0;
 }
