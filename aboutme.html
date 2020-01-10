@@ -9,7 +9,7 @@
 </head>
 
 <nav>
-    <a class="activ
+    <a class="active></a>
 </nav>
 <body>
     <h1> About Me!</h1>
@@ -19,8 +19,25 @@
 
     </p>
     </font>
-    <button id="fact" onclick="fact_generate">
-            Click here for a random fact!
-    </button>
+
+    <div class="factFun">
+        <button class="funActivator"> Click here for a fun fact about me!
+        </button>
+        <p class="displayField">
+        </p>
+    </div>
+  <script>
+      const factFun = document.querySelector('factFun');
+      const button = document.querySelector('funActivator');
+      const display = document.querySelector('displayField');
+      if (button.addEventListener('click') == true) {
+          display.textContent = fact_generate;
+      }
+      ;
+
+
+
+  </script>
+
 </body>
 </html>
