@@ -14,30 +14,30 @@
 <body>
     <h1> About Me!</h1>
     <font face="verdana" size="4">
-    <p>
-        I was born in China and came to Canada at the age of one and an half. My family and I moved around in downtown 
+        <p>
+            I was born in China and came to Canada at the age of one and an half. My family and I moved around in downtown
 
-    </p>
+        </p>
     </font>
 
+    <script>
+        function fact_generate{
+            let facts = { "Big supporter of the Tottenham Hotspurs!", "Has never consumed alcohol or any perspective changing substances", "Never been more South than Virginia!"}
+            const factFun = document.querySelector('factFun');
+            const button = document.querySelector('funActivator');
+            const display = document.querySelector('displayField');
+            display.textContent = facts[Math.random(2)];
+        }
+    </script>
+
     <div class="factFun">
-        <button class="funActivator"> Click here for a fun fact about me!
+        <button class="funActivator" onclick="fact_generate">
+            Click here for a fun fact about me!
         </button>
         <p class="displayField">
         </p>
     </div>
-  <script>
-      const factFun = document.querySelector('factFun');
-      const button = document.querySelector('funActivator');
-      const display = document.querySelector('displayField');
-      if (button.addEventListener('click') == true) {
-          display.textContent = fact_generate;
-      }
-      ;
 
-
-
-  </script>
 
 </body>
 </html>
