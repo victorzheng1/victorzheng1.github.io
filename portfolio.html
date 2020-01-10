@@ -6,11 +6,58 @@
     <title>Victor Zheng</title>
 </head>
 <body>
-    <section id="prelude">
+    <section class="prelude">
         <h1> My Portfolio</h1>
         <p>
-            Here is a display of my part work from either school or hobby projects.
-        </p>
+            Here is a display of my work from school or fun!
+        </p
     </section>
+
+    <style>
+        .container {
+            position: relative;
+            width: 50%;
+            }
+
+        .image {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+
+        .overlay {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: #008CBA;
+          overflow: hidden;
+          width: 100%;
+          height: 0;
+          transition: .5s ease;
+        }
+
+        .container:hover .overlay {
+          height: 50%;
+        }
+
+        .text {
+         color: white;
+         font-size: 20px;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         text-align: center;
+        }
+
+    </style>
+
+    <div class="container">
+        <img src="child_detector.jpg" class="image"/>
+        <div class="overlay">
+            <div class="text"> Child detector made in design class using FSR, temperature, and PIR sensors, and Arduino UNO to detect temperature and the variables that corresponded to a presence of a child (weight and movement). This was programmed with Arduino C and assembled over a course of a few months. It was fully functional in the end;it was able to sense the conditions and deliver the info to server as well as triggering the buzzer upon dangerous conditions. </div>
+        </div>
+    </div>
 </body>
 </html>
