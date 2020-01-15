@@ -21,22 +21,23 @@
         <p>
             I was born in China and came to Canada at the age of one and an half. My family and I moved around in downtown until we settled down in the neighbourhood of Flemingdon Park.
             I am proud to have been raised in one of Canada's most culturally vibrant and inclusive communities. Through my childhood, I learned the values of hardwork, humility, and diligence.
-            My first exposure to computers was during fifth grade when I created a website through Blogger for the flash game Club Penguin. 
+            My first exposure to computers was during fifth grade when I created a website through Blogger for the flash game Club Penguin.
             I learned the basics of HTML elements and attributes and
 
         </p>
     </div>
+    <!--
+       <div id="factDisplay"></div>
+      <button onclick="fact_generate()"> Click here for more facts! </button>
+        <script>
+            function fact_generate() {
 
-    <div id="factDisplay"></div>
-    <button onclick="fact_generate()"> Click here for more facts! </button>
-
-    <script>
-        function fact_generate() {
-            var facts = ["Big supporter of the Tottenham Hotspurs!", "Has never consumed alcohol or any perspective changing substances", "Never been more South than Virginia!"];
-            document.getElementById('factDisplay').innerHTML= facts[Math.floor(Math.random(2))];
-        }
-    </script>
-
+                var facts = ["Big supporter of the Tottenham Hotspurs!", "Has never consumed alcohol or any perspective changing substances", "Never been more South than Virginia!"];
+                var rand = Math.floor(Math.random(facts.length));
+                document.getElementById('factDisplay').innerHTML = facts[rand];
+            }
+        </script>
+           //-->
 
 
 
