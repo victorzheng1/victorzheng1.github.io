@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="main.css" />
     <title>Victor Zheng</title>
 </head>
-<nav class="topbar">
-    <a href="index.html" class="active"> Home </a> <!--brings back to home page-->
-    <a href="resume.html" class="active"> Resume</a> <!-- little biography page-->
-    <a href="portfolio.html" class="active"> Portfolio</a> <!--showcase of work here-->
-    <a href="contactlinks.html" class="active"> Contact Me</a> <!--put some social media-->
-</nav>
+
 <body>
+    <nav class="topbar">
+        <a href="index.html" class="active"> Home </a> <!--brings back to home page-->
+        <a href="resume.html" class="active"> Resume</a> <!-- little biography page-->
+        <a href="portfolio.html" class="active"> Portfolio</a> <!--showcase of work here-->
+        <a href="contactlinks.html" class="active"> Contact Me</a> <!--put some social media-->
+    </nav>
+    <div class="container">
+
+    </div>
     <section class="prelude">
         <h1> My Portfolio</h1>
         <p>
@@ -25,24 +29,25 @@
         .image {
             width: 300px;
             height: 300px;
-            display: inline-block;
+            display: block;
+ 
         }
 
         .overlay {
-            position: absolute;
+            position:absolute;
             bottom: 0;
             left: 0;
             right: 0;
             background-color: blue;
             opacity: 0.8;
             overflow: hidden;
-            width: 100%;
+            width: 300px;
             height: 0;
             transition: .5s ease;
         }
 
         .container:hover .overlay {
-            height: 50%;
+            height: 150px;
         }
 
         .text {
@@ -56,26 +61,26 @@
         }
     </style>
 
-    <div class="container" id="mod1box">
-        <img src="mod1.jpg" class="image" />
-        <div class="overlay">
-            <div class="text">
-                During my first year design class, my team and I developped a prototype for a system that detects humidity, temperature, and soil moisture levels targetted for exotic ecosystems. For the actual prototype, a custom PCB was designed as well
-                as the external casing that was 3D printed. The website was developped using Bootstrap, HTML, and JS and done with a backend of PHP. The backend dealt with the login and data flow from the module that was displayed on the site.
+    <div class="row">
+        <div class="container" id="mod1box">
+            <img src="mod1.jpg" class="image" />
+            <div class="overlay">
+                <div class="text">
+                    During my first year design class, my team and I developped a prototype for a system that detects humidity, temperature, and soil moisture levels targetted for exotic ecosystems. For the actual prototype, a custom PCB was designed as well
+                    as the external casing that was 3D printed. The website was developped using Bootstrap, HTML, and JS and done with a backend of PHP. The backend dealt with the login and data flow from the module that was displayed on the site.
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="200box">
+            <img src="child_detector.jpg" class="image" />
+            <div class="overlay">
+                <div class="text">
+                    Child detector made in my second year design class using FSR, temperature, and PIR sensors, and Arduino UNO to detect temperature and the variables that corresponded to a presence of a child (weight and movement).
+                    This was programmed with Arduino C and assembled over a course of a few weeks. The data is continously streamed into the server, and if there is a trigger for any "dangerous" conditions, then it will ring the buzzer.
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="container" id="200box">
-        <img src="child_detector.jpg" class="image" />
-        <div class="overlay">
-            <div class="text">
-                Child detector made in my second year design class using FSR, temperature, and PIR sensors, and Arduino UNO to detect temperature and the variables that corresponded to a presence of a child (weight and movement).
-                This was programmed with Arduino C and assembled over a course of a few weeks. The data is continously streamed into the server, and if there is a trigger for any "dangerous" conditions, then it will ring the buzzer.
-            </div>
-        </div>
-    </div>
-
-
 </body>
 </html>
