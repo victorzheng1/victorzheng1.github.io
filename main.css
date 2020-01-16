@@ -9,6 +9,7 @@ body{
 	overflow-wrap:normal;
 	font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
 	font-size: 36px;
+	position:absolute;
 }
 
 .topbar a{
@@ -68,9 +69,14 @@ h1 {
 #portraitMe1{
 	width:auto;
 	height:100% \9;
+	display:inline-block;
 
 }
 
+#intro{
+	float:left;
+	display: inline-block;
+}
 
 .carousel-item.active,
 .carousel-item-next,
