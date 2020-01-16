@@ -9,7 +9,7 @@
 </head>
 <nav class="topbar">
     <a href="index.html" class="active"> Home </a> <!--brings back to home page-->
-    <a href="aboutme.html" class="active"> About Me</a> <!-- little biography page-->
+    <a href="resume.html" class="active"> Resume</a> <!-- little biography page-->
     <a href="portfolio.html" class="active"> Portfolio</a> <!--showcase of work here-->
     <a href="contactlinks.html" class="active"> Contact Me</a> <!--put some social media-->
 </nav>
@@ -22,15 +22,10 @@
     </section>
 
     <style>
-        .container {
-            position: relative;
-            width: 50%;
-        }
-
         .image {
-            display: block;
-            width: auto;
-            height: auto;
+            width: 300px;
+            height: 300px;
+            display: inline-block;
         }
 
         .overlay {
@@ -61,12 +56,26 @@
         }
     </style>
 
-    <div class="container">
-        <img src="child_detector.jpg" class="image" />
+    <div class="container" id="mod1box">
+        <img src="mod1.jpg" class="image" />
         <div class="overlay">
-            <div class="text"> Child detector made in design class using FSR, temperature, and PIR sensors, and Arduino UNO to detect temperature and the variables that corresponded to a presence of a child (weight and movement). 
-            This was programmed with Arduino C and assembled over a course of a few months. It was fully functional in the end;it was able to sense the conditions and deliver the info to server as well as triggering the buzzer upon dangerous conditions. </div>
+            <div class="text">
+                During my first year design class, my team and I developped a prototype for a system that detects humidity, temperature, and soil moisture levels targetted for exotic ecosystems. For the actual prototype, a custom PCB was designed as well
+                as the external casing that was 3D printed. The website was developped using Bootstrap, HTML, and JS and done with a backend of PHP. The backend dealt with the login and data flow from the module that was displayed on the site.
+            </div>
         </div>
     </div>
+
+    <div class="container" id="200box">
+        <img src="child_detector.jpg" class="image" />
+        <div class="overlay">
+            <div class="text">
+                Child detector made in my second year design class using FSR, temperature, and PIR sensors, and Arduino UNO to detect temperature and the variables that corresponded to a presence of a child (weight and movement).
+                This was programmed with Arduino C and assembled over a course of a few weeks. The data is continously streamed into the server, and if there is a trigger for any "dangerous" conditions, then it will ring the buzzer.
+            </div>
+        </div>
+    </div>
+
+
 </body>
 </html>
