@@ -70,3 +70,10 @@ h1 {
 	height:100% \9;
 
 }
+
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+	display: block;
+}
