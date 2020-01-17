@@ -35,40 +35,23 @@ body{
 }
 
 
-.container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	width: 500px;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-size: 15px;
-	overflow-wrap: break-word;
-	margin: 0 15%;
-	overflow: auto;
-	padding: 0px 100px 20px 100px; /* top right bottom left parameters */
-}
-.text {
-	color: white;
-	font-size: 20px;
-	position: inherit;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	text-align: center;
-}
 
+.container{
+	padding: 10px 10px 10px 10px;
+
+
+
+}
 
 h1 {
 	font-size: 50px;
 }
 
 #portraitMe1{
-	width:auto;
-	height:100% \9;
-	display:inline-block;
+	width:200px;
+	height:200px \9;
+padding:10px;
+border-radius:50%;
 
 }
 

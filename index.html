@@ -16,9 +16,8 @@
 		<a href="portfolio.html" class="active"> Portfolio</a> <!--showcase of work here-->
 		<a href="contactlinks.html" class="active"> Contact Me</a> <!--put some social media-->
 	</nav>
-
-    <div class="row">
-		<div class="col">
+	<div class="row">
+		<div class="col-md-4">
 			<div class="container" id="intro">
 				<div class="jumbotron">
 					<p>
@@ -30,51 +29,66 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-auto">
-			<img src="8F358C2C-97E6-41C7-BFBE-3E7894E61033.jpeg" class="img-fluid" id="portraitMe1" /> <!-- picture of me in hong kong-->
+
+		<div class="col-md-4">
+			<div class="container">
+				<img src="8F358C2C-97E6-41C7-BFBE-3E7894E61033.jpeg" id="portraitMe1" /> <!-- picture of me in hong kong-->
+			</div>
 		</div>
-    </div>
+	</div>
 
-				<div class="container">
-					<div id="carouselContent" class="carousel slide" data-ride="carousel">
-						<div class="carousel-inner" role="listbox">
-							<div class="carousel-item active text-center p-4">
-								<h2> Why am I a candidate for you to consider?</h2>
-							</div>
-							<div class="carousel-item text-center p-4">
-								<h2> Civil Servant </h2>
-								<p>
-									<strong> 1000</strong> and counting hours dedicated to community service;<br />
-									over 300+ of these hours with people with disabilities! Being raised up in Flemingdon Park, <br />
-									one of Toronto's most culturally vibrant and diverse neighbourhoods, I was immersed in an understanding of peoples of different backgrounds and Canada's marginalized and disenfranchised groups.
-								</p>
-							</div>
-							<div class="carousel-item text-center p-4">
-								<h2> Military Contribution </h2>
-								<p>
-									I've always dreamed about being giving to my country through military service.  Although this dream hasn't been completely fulfilled, I am honored to have been in the CAF army reserves for over a year!
-									I am proud to carry all of the lessons and character that I have gained in any of my work! Working together in a team is no trouble for me, nor is perservering through any challege!
-								</p>
-							</div>
-
-							<div class="carousel-item text-center p-4">
-								<h2> Skills and Ambitions</h2>
-								<p>
-									Although I am fluent in Chinese and French, I am well versed in C, Java, front end development (HTML, CSS (including Bootstrap!), and Javascript), and Python. I have a solid foundation in algorithm design and developent as well as the
-									implementation of data structures. I have experience with microcontrollers specifically with STM boards and with Linux kernel commands. I have a strong drive to continually learn
-								</p>
-							</div>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="container">
+				<div id="carouselContent" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner" role="listbox">
+						<div class="carousel-item active text-center p-4">
+							<h2> Why am I a candidate for you to consider?</h2>
 						</div>
-						<a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</a>
+						<div class="carousel-item text-center p-4">
+							<style>
+								#carouselContent{
+									background-color:lightcoral;
+								}
+							</style>
+							<h2> Civil Servant </h2>
+							<p>
+								<strong> 1000</strong> and counting hours dedicated to community service;<br />
+								over 300+ of these hours with people with disabilities! Being raised up in Flemingdon Park, <br />
+								one of Toronto's most culturally vibrant and diverse neighbourhoods, I was immersed in an understanding of peoples of different backgrounds and Canada's marginalized and disenfranchised groups.
+							</p>
+						</div>
+						<div class="carousel-item text-center p-4">
+							<h2> Military Member </h2>
+							<p>
+								I've always dreamed about being giving to my country through military service.  Although this dream hasn't been completely fulfilled, I am honored to have been in the CAF army reserves for over a year!
+								I am proud to carry all of the lessons and character that I have gained in any of my work! Working together in a team is no trouble for me, nor is perservering through any challege!
+							</p>
+						</div>
+
+						<div class="carousel-item text-center p-4">
+							<h2> Skills and Ambitions</h2>
+							<p>
+								Although I am fluent in Chinese and French, I am well versed in C, Java, front end development (HTML, CSS (including Bootstrap!), and Javascript), and Python. I have a solid foundation in algorithm design and developent as well as the
+								implementation of data structures. I have experience with microcontrollers specifically with STM32 boards and with Linux kernel commands. I have a strong drive to continually learn and thrive by practice!
+							</p>
+						</div>
 					</div>
+					<a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
 				</div>
+			</div>
+		</div>
+	</div>
+		
+
+	
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="scripts/bootstrap.bundle.min.js"></script>
