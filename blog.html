@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Blog - Victor Zheng</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap">
+  <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+  <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+  <link rel="stylesheet" href="assets/css/Parallax-Scroll-Effect-Parallax-Scroll-Effect.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <style>
+    body{padding-top:100px}
+    .post{border-bottom:1px solid #eee;padding:1rem 0}
+    .filters{margin-bottom:1rem}
+    .no-results{color:#666;margin-top:1rem}
+  </style>
+
+  <main class="page container">
+    <h2 class="fw-bold">Blog</h2>
+    <p class="text-muted">Search or filter to see my thoughts. </p>
+
+    <div class="search row">
+      <div class="col-md-6 mb-2"><input id="search" class="form-control" placeholder="Search posts (title or content)"></div>
+    </div>
+      <div class="date_filter row">
+        <label class="col-md-3 col-form-label mb-2">Filter by starting date:</label>
+        <div class="col-md-3 mb-2"><input id="startdate" class="form-control" type="date" placeholder="Start date"></div>
+        <label class="col-md-3 col-form-label mb-2">Filter by ending date:</label>
+        <div class="col-md-3 mb-2"><input id="enddate" class="form-control" type="date" placeholder="End date"></div>
+      </div>
+
+    <div id="posts"></div>
+    <div id="noresults" class="no-results" style="display:none">No posts match your search.</div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/load-components.js"></script>
+  <script src="assets/js/bs-init.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script>
+    // Static posts: add or edit entries here. Date format: YYYY-MM-DD
+    const POSTS = [
+      {
+        title: 'Welcome',
+        date: '2026-03-23',
+        content: '<p>  </p>'
+      },
+    ];
+
+    function renderPosts(list){
+      const container = document.getElementById('posts');
+      container.innerHTML = '';
+      if(!list.length){
+        document.getElementById('noresults').style.display='block';
+        return;
+      }
+      document.getElementById('noresults').style.display='none';
+      list.forEach(p=>{
+        const el = document.createElement('article');
+        el.className='post';
+        el.innerHTML = `\n          <h3>${p.title}</h3>\n          <p class="text-muted small">${p.date}</p>\n          <div>${p.content}</div>\n        `;
+        container.appendChild(el);
+      });
+    }
+
+    function filterAndRender(){
+      const q = (document.getElementById('search').value||'').toLowerCase();
+      const s = document.getElementById('startdate').value;
+      const e = document.getElementById('enddate').value;
+      let filtered = POSTS.filter(p=>{
+        if(s && p.date < s) return false;
+        if(e && p.date > e) return false;
+        if(!q) return true;
+        const combined = (p.title + ' ' + (p.content || '')).toLowerCase();
+        return combined.indexOf(q) !== -1;
+      });
+      renderPosts(filtered);
+    }
+
+    document.getElementById('search').addEventListener('input', filterAndRender);
+    document.getElementById('startdate').addEventListener('change', filterAndRender);
+    document.getElementById('enddate').addEventListener('change', filterAndRender);
+
+    renderPosts(POSTS);
+  </script>
+
+</body>
+</html>
