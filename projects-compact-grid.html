@@ -100,6 +100,16 @@
 
             <div class="col-md-6 col-lg-4">
                 <div class="portfolio-item-wrapper" data-bs-toggle="modal" data-bs-target="#projectModal" 
+                     data-title="Conversational AI Mobile Robotic Assistant (Capstone Project)" 
+                     data-body="Real-time conversational AI based on Wav2Vec2, FastPitch, and GPT3.5 with audio filtering and denoising in custom 3D printed chassis running on the Jetson Orin AGX via ROS Noetic. Inspired by the Sims 4 Partybot, can play music integrated with Spotify with autnomous navigation in a closed environment.
+                     "
+                     data-img="assets/img/portfolio/capstone.PNG">
+                    <img src="assets/img/portfolio/capstone.PNG" alt="Conversational AI Mobile Robot" />
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="portfolio-item-wrapper" data-bs-toggle="modal" data-bs-target="#projectModal" 
                      data-title="Finance Portfolio Management Tool" W
                      data-body="Flask based tool that pulls live stock data from yahoo Finance to help users optimize investments based on different mathematical techniues including mean-variance optimiation, cointegration testing, as well as a composite fear index."
                      data-link="https://stock-predictor-pi.vercel.app/"
@@ -148,8 +158,14 @@
         modalTitle.textContent = title;
         modalBody.textContent = body;
         modalImg.src = imgPath;
-        modalLink.href = link;
-        modalLink.textContent = 'View Project';
+        
+        if (link != null){
+            modalLink.href = link;
+            modalLink.textContent = 'View Project';
+        } else {
+            modalLink.href = '';
+            modalLink.textContent = '';
+        }
     });
 </script>
 
